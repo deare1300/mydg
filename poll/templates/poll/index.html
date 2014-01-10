@@ -1,0 +1,12 @@
+
+{% if latest_poll_list %}
+    <ul>
+    {% for poll in latest_poll_list %}
+        <li><a href="{% url 'detail' poll.username %}">{{ poll.password }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
+
+the threading is {{ count }}

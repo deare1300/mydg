@@ -1,0 +1,41 @@
+{% include "user/head.html" %}
+welcome,{{ username }}<br/>
+<lable>total user on line:</lable> {{ total_user }}
+<br/>
+ <a href='{%url "user_logout" %}'>logout</a>
+ 
+<div class="title">
+<h1>this is title</h1>
+</div>
+ <table width="60%" id="mytab"  border="1" class="table_css">
+ <thead>
+<tr>
+<th width="30%">
+id
+</th >
+<th width=45%>
+login
+</th>
+<th width="30%">
+password
+</th>
+</tr>
+</thead>
+
+{% for user in all_user %}    
+<tr>
+<td width="10%" >
+{{ user.id }}
+</th>
+<td width=15%" >
+{{ user.login }}
+</th>
+<td width="10%" >
+{{ user.password }}
+</th>
+</tr>
+{% endfor %}
+</table>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+
+<form action="/mydg/user/index/" method="post">
+<table>
+{{ error }}
+ {% csrf_token %} 
+{{ form.as_p }}
+</table>
+<input type="hidden" name= randint value={{ randint }} />
+<input type="submit"/>
+</form>

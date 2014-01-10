@@ -1,0 +1,11 @@
+
+<form action="/mydg/user/index/" method="POST">
+	 {% csrf_token %} 
+	{{ error|escape }}
+    <label for="login">login: </label>
+    <input type="text" name="username" value="{{ username }}">
+    <label for="password">password: </label>
+    <input type="text" name="password" value="{{ password|escape }}">
+    <input type="submit" value="submit">
+ </form>
+ 

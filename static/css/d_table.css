@@ -1,0 +1,25 @@
+body,table{
+ font-size:13px;
+}
+table{
+table-layout:fixed;
+empty-cells:show; 
+border-collapse: collapse;
+margin:0 auto;
+}
+h1{ font-size:12px; margin:0;padding:0;}
+.title{ background: #FFF;width:90%;border: 1px solid #99B3C5; padding: 1px;%;margin:20px auto;}
+.title h1{line-height: 31px;text-align:center;background: #2F589C ;background-repeat: repeat-x; background-position: 0 0; color: #FFF;}
+
+.table_css{
+border:1px solid #9db3c5;
+color:#666;
+}
+table.table_css th{
+height:30px;
+}
+table.table_css td{
+ border:1px solid #cad9ea;
+ padding:0 1.5em 0;
+ text-align:center;
+}
